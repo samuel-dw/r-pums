@@ -266,5 +266,15 @@ campo_pumas <- c("5201", "5202", "5203","5204",
 
 campo_pums <- subset(PUMS.TX15, PUMS.TX15$PUMA10 %in% campo_pumas | PUMS.TX15$PUMA00 %in% campo_pumas)
 
+campo_pums <- PUMS.TX15 %>%
+            filter(PUMA10 %in% campo_pumas | PUMA00 %in% campo_pumas)
+
 detach(PUMS.TX15)
 attach(campo_pums)
+
+# To check. state male pop: 13171032  std_err: 2519.444
+state_males <- PUMS.TX15 %>%
+    filter(SEX == 1)
+
+state_male_pop_estimate <- sum(state_males$PWGTP)
+state_male_pop_std_err <- stand.err.from.replicate.est(state_males,state_male_pop_estimate)
