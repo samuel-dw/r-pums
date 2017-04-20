@@ -178,7 +178,7 @@ summary(mode_sum)
 
 # Standard error function
 
-stand.err.from.replicate.est <- function(data, estimate){
+population_std_err <- function(data, estimate){
   # data has PWGTP1 through PWGTP80
   # estimate is a single value (e.g., from sum(PWGTP))
   just_pwgtp <- data %>% select(PWGTP1:PWGTP80)
@@ -204,9 +204,29 @@ stand.err.from.replicate.est <- function(data, estimate){
 
 population_estimate_with_std_error <- function(data) {
     estimate = sum(data$PWGTP)
-    std_err = stand.err.from.replicate.est(data, estimate)
+    std_err = population_std_err(data, estimate)
     return(data.frame(estimate, std_err))
 }
+
+# Now generalize to accept a function to create estimates.
+# Two step problem: 1. pass arbitrary columns in to be selected from data
+# generalize so that FUN can be weighted_mean etc.
+estimate_with_std_error <- function(data, characteristic = ~ PWGTP, FUN=sum) {
+    col_name <- f_eval(characteristic, data) # selects a column
+    estimate = FUN(col_name)
+    std_err = "fixme"
+    std_err = stand.err.from.replicate.est(data, estimate, FUN=FUN)
+    return(data.frame(estimate, std_err))
+}
+
+# Weighted Mean JWMNP
+# estimate_with_std_error <- function(data, characteristic=PWGTP, FUN=sum) {
+#     estimate = FUN(data$characteristic, data$PWGTP)
+#     std_err = "fixme"# stand.err.from.replicate.est(data, estimate, FUN=FUN)
+#     return(data.frame(estimate, std_err))
+# }
+
+
 
 
 male.modes <- campo.males %>%
@@ -278,3 +298,7 @@ state_males <- PUMS.TX15 %>%
 
 state_male_pop_estimate <- sum(state_males$PWGTP)
 state_male_pop_std_err <- stand.err.from.replicate.est(state_males,state_male_pop_estimate)
+
+PUMS.TX15 %>%
+    group_by(SEX, JWTR) %>%
+    do(population_estimate_with_std_error(.))
