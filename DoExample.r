@@ -224,3 +224,40 @@ campo_pums %>%
             median_travel_time = weightedMedian(JWMNP,PWGTP))
 
 
+############
+
+#Set URL for PUMS data
+URL.PUMS.PTX <- "https://www2.census.gov/programs-surveys/acs/data/pums/2015/5-Year/csv_ptx.zip" 
+
+#Set download destination 
+destfile.PUMS.PTX <- "csv_ptx.zip"
+
+#Download PUMS to destination (in working directory)
+download.file(URL.PUMS.PTX, destfile.PUMS.PTX)
+print("PUMS data downloaded")
+
+#Unzip file
+unzip(destfile.PUMS.PTX)
+
+#List to identify .csv name
+unzip(destfile.PUMS.PTX, list = TRUE)
+
+## Read csv into dataframe, load libraries
+
+PUMS.TX15 <- read.csv(file = "ss15ptx.csv", header = TRUE)
+
+attach(PUMS.TX15) # For ease of writing expressions (allows column names to be called directly)
+library(dplyr)
+library(matrixStats) # To calculate weighted median
+
+## Set geographies
+
+campo_pumas <- c("5201", "5202", "5203","5204", 
+                 "5305", "5302", "5301", "5306",
+                 "5303", "5308", "5307", "5309",
+                 "5304", "5400")
+
+campo_pums <- subset(PUMS.TX15, PUMS.TX15$PUMA10 %in% campo_pumas | PUMS.TX15$PUMA00 %in% campo_pumas)
+
+detach(PUMS.TX15)
+attach(campo_pums)
