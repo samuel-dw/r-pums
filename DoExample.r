@@ -1,8 +1,8 @@
 ### NOTE: presumes all data and packages from previous script already loaded
 ### Some functions are included at the end the this script, for reference purposes.
 
-# From ?do documentation: 
-# "Groups are preserved for a single unnamed input. 
+# From ?do documentation:
+# "Groups are preserved for a single unnamed input.
 # This is different to summarise because do generally does not reduce the complexity of the data, it just expresses it in a special way."
 
 # So, when summarise is called on data, it reduces that data to summaries.
@@ -10,16 +10,16 @@
 
 # Step 1: derive estimate that preserves complexity of data
 
-campo.males.est <- campo_pums %>% 
+campo.males.est <- campo_pums %>%
   filter(SEX == 1) %>%
   do(., summarise(., population = sum(PWGTP))) # Note: have to call "." twice becuase, normally, first "." is assumed with %>% operator
 
-# The above appears to work, but we want a more robust function. 
+# The above appears to work, but we want a more robust function.
 
 campo.modes.by.sex.est <- campo_pums %>%
   group_by(SEX) %>%
   group_by(JWTR, add = TRUE) %>%
-  do(., summarise(., population = sum(PWGTP))) 
+  do(., summarise(., population = sum(PWGTP)))
 
 # The above does not exactly work. Instead of being grouped by SEX and then JWTR, it instead just summarizes JWTR.  Maybe ad "do" to the second group?
 
@@ -40,7 +40,7 @@ campo.modes.by.sex.est.as.values <- campo.modes.by.sex.est[,2] # To transform df
 
 campo.modes.by.sex.data <- campo_pums %>%
   group_by(SEX) %>%
-  group_by(JWTR) 
+  group_by(JWTR)
 
 # Now, have data and estimate necessarty for SE function.
 # Question is, do we need to call "do" in function?
@@ -55,7 +55,7 @@ do(campo.modes.by.sex.data, stand.err.from.replicate.est(campo.modes.by.sex.data
 
 # Maybe change function?
 
-race.ethnicity.sex.by_mode <- function(race.select, ethnicity.select, sex.select){ 
+race.ethnicity.sex.by_mode <- function(race.select, ethnicity.select, sex.select){
   mres <-   campo_pums %>%
     filter(RAC1P == race.select) %>% # White = 1, Black = 2, Other = 8, Two or more = 9
     filter(HISP == ethnicity.select) %>% # 01 = Not Hispanic, everything else is
@@ -69,7 +69,7 @@ race.ethnicity.sex.by_mode(1,01,1) # Works.
 
 
 
-mode.by_race.by_ethnicity.by_sex <- function(mode.select){ 
+mode.by_race.by_ethnicity.by_sex <- function(mode.select){
   mres2 <-   campo_pums %>%
     filter(JWTR == mode.select) %>% # White = 1, Black = 2, Other = 8, Two or more = 9
     group_by(RAC1P) %>%
@@ -149,7 +149,7 @@ if (require("nycflights13")) {
   # model. Let's explore how carrier departure delays vary over the time
   carriers <- group_by(flights, carrier)
   group_size(carriers)
-  
+
   mods <- do(carriers, mod = lm(arr_delay ~ dep_time, data = .)) # This makes a tbl of 16 carriers, each with a corresponding lm list.
   mods %>% do(as.data.frame(coef(.$mod)))
   mods %>% summarise(rsq = summary(mod)$r.squared)
@@ -166,7 +166,7 @@ do(by_mode, head(.,2))
 
 group_size(by_mode)
 
-mode_sum <- by_mode %>% 
+mode_sum <- by_mode %>%
   do(pop.est = summarize(., sum(PWGTP))) # This generates pop.est as a list, but the list is simply a 1x1 tbl. The value does not look right, according to the calls below.
 mode_sum
 summary(mode_sum)
@@ -182,25 +182,32 @@ stand.err.from.replicate.est <- function(data, estimate){
   # data has PWGTP1 through PWGTP80
   # estimate is a single value (e.g., from sum(PWGTP))
   just_pwgtp <- data %>% select(PWGTP1:PWGTP80)
-  
+
   # sum up each of the 80 columns, now have just 80 values.
   # whatever method used to create estimate done to each of the 80 colums.
   # here estimate done with sum(PWGTP) so we can use colSums.
   # if we'd justed weighted_mean would have to use that on each.
   pwgtp_sums <- colSums(just_pwgtp)
-  
+
   # subtract the estimate from each, still have 80 values.
   pwgtp_diffs <- pwgtp_sums - estimate
-  
+
   # square those, still have 80 values
   squared_diffs <- pwgtp_diffs * pwgtp_diffs # or pwgtp_diffs ^ 2
-  
+
   sum.squared.diffs <- sum(squared_diffs) # now just 1 value.
-  
+
   stand.err <- sqrt(sum.squared.diffs * (4.0 / 80.0)) # just 1 value.
-  
+
   return(stand.err)
 }
+
+population_estimate_with_std_error <- function(data) {
+    estimate = sum(data$PWGTP)
+    std_err = stand.err.from.replicate.est(data, estimate)
+    return(data.frame(estimate, std_err))
+}
+
 
 male.modes <- campo.males %>%
   group_by(JWTR) %>%
@@ -227,9 +234,9 @@ campo_pums %>%
 ############
 
 #Set URL for PUMS data
-URL.PUMS.PTX <- "https://www2.census.gov/programs-surveys/acs/data/pums/2015/5-Year/csv_ptx.zip" 
+URL.PUMS.PTX <- "https://www2.census.gov/programs-surveys/acs/data/pums/2015/5-Year/csv_ptx.zip"
 
-#Set download destination 
+#Set download destination
 destfile.PUMS.PTX <- "csv_ptx.zip"
 
 #Download PUMS to destination (in working directory)
@@ -252,7 +259,7 @@ library(matrixStats) # To calculate weighted median
 
 ## Set geographies
 
-campo_pumas <- c("5201", "5202", "5203","5204", 
+campo_pumas <- c("5201", "5202", "5203","5204",
                  "5305", "5302", "5301", "5306",
                  "5303", "5308", "5307", "5309",
                  "5304", "5400")
