@@ -26,12 +26,18 @@ pop_estimate_with_std_error <- function(df) {
 # do(mean_estimate_with_std_error(.,variable = ~ PAP))
 # do(mean_estimate_with_std_error(.,variable = ~ JWMNP))
 mean_estimate_with_std_error <- function(df, variable) {
+    # get just column for variable.
     variable_col = f_eval(~ uq(variable), data = df)
+    # get all the PWGTP columns (inc all replicate weights)
     weights = select(df, starts_with("PWGTP"))
-    # Does weighted_mean for variable_col for each replicate weight.
+    # Do weighted_mean for variable_col for each replicate weight.
+    # by setting x in the lapply that allows w to vary.
     estimates = lapply(weights, weighted.mean, x = variable_col, na.rm=TRUE)
+    # fix output of lapply to suck less.
     estimates = t(data.frame(estimates))
-    estimate = estimates["PWGTP",]
+    estimate = estimates["PWGTP",] # gets estimate just for PWGTP
+    # estimates still contains estimate for PWGTP but that is zeroed
+    # out in std_error procedure.
     std_err = std_error_from_replicate_estimates(estimate, estimates)
     return(data.frame(estimate, std_err))
 }
@@ -59,6 +65,8 @@ library(lazyeval)
 # ## Read csv into dataframe, load libraries
 #
 # PUMS.TX15 <- read.csv(file = "ss15ptx.csv", header = TRUE)
+
+# save(PUMS.TX15, file="PUMS.TX15.Rdata")
 
 setwd("/Users/howison/Documents/UTexas/Advising/Sam/r-pums")
 load("PUMS.TX15.Rdata") # saved version
