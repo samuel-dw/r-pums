@@ -7,7 +7,7 @@ import csv
 # Getting a list
 """Create one file. title, id, variable_name"""
 def output_to_csv(all_records):
-    filename = "pums_csv/code_dictionary.csv"
+    filename = "code_dictionary.csv"
     fieldnames = ['title', 'title_note', 'id', 'variable_name']
 
     with open(filename, 'w') as csvfile:
