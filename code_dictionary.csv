@@ -11,7 +11,7 @@ DIVISION,Division code,6,East South Central (South region)
 DIVISION,Division code,7,West South Central (South Region)
 DIVISION,Division code,8,Mountain (West region)
 DIVISION,Division code,9,Pacific (West region)
-PUMA00,Public use microdata area code (PUMA) based on Census 2000 definition for data collected prior to 2012. Use in combination with PUMA10.,00100..08200,Public use microdata area codes 
+PUMA00,Public use microdata area code (PUMA) based on Census 2000 definition for data collected prior to 2012. Use in combination with PUMA10.,00100..08200,Public use microdata area codes
 PUMA00,Public use microdata area code (PUMA) based on Census 2000 definition for data collected prior to 2012. Use in combination with PUMA10.,-0009,Code classification is Not Applicable because data collected in 2012 or later
 PUMA10,Public use microdata area code (PUMA) based on 2010 Census definition for data collected in 2012 or later. Use in combination with PUMA00.,00100..70301,Public use microdata area codes
 REGION,Region code,1,Northeast
@@ -81,17 +81,17 @@ ADJINC,Adjustment factor for income and earnings dollar amounts (6 implied decim
 ADJINC,Adjustment factor for income and earnings dollar amounts (6 implied decimal places),1025215,2013 factor (1.007549 * 1.01753361)
 ADJINC,Adjustment factor for income and earnings dollar amounts (6 implied decimal places),1009585,2014 factor (1.008425 * 1.00115009)
 ADJINC,Adjustment factor for income and earnings dollar amounts (6 implied decimal places),1001264,2015 factor (1.001264 * 1.00000000)
-WGTP,Housing Weight,00000,Group Quarter placeholder record 
+WGTP,Housing Weight,00000,Group Quarter placeholder record
 WGTP,Housing Weight,00001..09999,Integer weight of housing unit
 NP,Number of person records following this housing record,00,Vacant unit
 NP,Number of person records following this housing record,01,One person record (one person in household or any person in group quarters)
 NP,Number of person records following this housing record,02..20,Number of person records (number of persons in household)
-TYPE,Type of unit,1,Housing unit		
+TYPE,Type of unit,1,Housing unit
 TYPE,Type of unit,2,Institutional group quarters
 TYPE,Type of unit,3,Noninstitutional group quarters
 ACR,Lot size,b,N/A (GQ/not a one-family house or mobile home)
 ACR,Lot size,1,House on less than one acre
-ACR,Lot size,2,House on one to less than ten acres 
+ACR,Lot size,2,House on one to less than ten acres
 ACR,Lot size,3,House on ten or more acres
 AGS,Sales of Agriculture Products (Yearly sales),b,N/A (GQ/vacant/not a one-family house or mobile home/less than 1 acre)
 AGS,Sales of Agriculture Products (Yearly sales),1,None
@@ -99,7 +99,7 @@ AGS,Sales of Agriculture Products (Yearly sales),2,$	1 - $ 999
 AGS,Sales of Agriculture Products (Yearly sales),3,$ 1000 - $ 2499
 AGS,Sales of Agriculture Products (Yearly sales),4,$ 2500 - $ 4999
 AGS,Sales of Agriculture Products (Yearly sales),5,$ 5000 - $ 9999
-AGS,Sales of Agriculture Products (Yearly sales),6,$ 10000+ 
+AGS,Sales of Agriculture Products (Yearly sales),6,$ 10000+
 BATH,Bathtub or shower,b,N/A (GQ)
 BATH,Bathtub or shower,1,Yes
 BATH,Bathtub or shower,2,No
@@ -254,12 +254,12 @@ FES,Family type and employment status	,5,"Other family: Male householder, no wif
 FES,Family type and employment status	,6,"Other family: Male householder, no wife present, not in LF"
 FES,Family type and employment status	,7,"Other family: Female householder, no husband present, in LF"
 FES,Family type and employment status	,8,"Other family: Female householder, no husband	present, not in LF"
-FINCP,Family income (past 12 months),bbbbbbbb,N/A (GQ/vacant)	
+FINCP,Family income (past 12 months),bbbbbbbb,N/A (GQ/vacant)
 FINCP,Family income (past 12 months),00000000,No family income
 FINCP,Family income (past 12 months),-0059999,"Loss of $59,999 or more"
 FINCP,Family income (past 12 months),-0059998..-0000001,"Loss of $1 to $59,998"
 FINCP,Family income (past 12 months),00000001,$1 or Break even
-FINCP,Family income (past 12 months),00000002..99999999,Total family income in dollars (Components are rounded) 
+FINCP,Family income (past 12 months),00000002..99999999,Total family income in dollars (Components are rounded)
 FPARC,Family presence and age of related children,b,N/A (GQ/vacant/not a family)
 FPARC,Family presence and age of related children,1,With related children under 5 years only
 FPARC,Family presence and age of related children,2,With related children 5 to 17 years only
@@ -275,9 +275,9 @@ HHL,Household language,1,English only
 HHL,Household language,2,Spanish
 HHL,Household language,3,Other Indo-European languages
 HHL,Household language,4,Asian and Pacific Island languages
-HHL,Household language,5,Other language 
+HHL,Household language,5,Other language
 HHT,Household/family type,b,N/A (GQ/vacant)
-HHT,Household/family type,1,Married couple household 
+HHT,Household/family type,1,Married couple household
 HHT,Household/family type,2,"Other family household:Male householder, no wife present"
 HHT,Household/family type,3,"Other family household:Female householder, no husband present "
 HHT,Household/family type,4,Nonfamily household:Male householder:Living alone
@@ -289,10 +289,10 @@ HINCP,Household income (past 12 months),00000000,No household income
 HINCP,Household income (past 12 months),-0059999,"Loss of $59,999 or more"
 HINCP,Household income (past 12 months),-0059998..-0000001,"Loss of $1 to $59,998"
 HINCP,Household income (past 12 months),00000001,$1 or Break even
-HINCP,Household income (past 12 months),00000002..99999999,Total household income in dollars (Components are rounded) 
+HINCP,Household income (past 12 months),00000002..99999999,Total household income in dollars (Components are rounded)
 HUGCL,Household with grandparent living with grandchildren,b,N/A (GQ/vacant)
 HUGCL,Household with grandparent living with grandchildren,0,Household without grandparent living with grandchildren
-HUGCL,Household with grandparent living with grandchildren,1,Household with grandparent living with grandchildren	
+HUGCL,Household with grandparent living with grandchildren,1,Household with grandparent living with grandchildren
 HUPAC,HH presence and age of children,b,N/A (GQ/vacant)
 HUPAC,HH presence and age of children,1,With children under 6 years only
 HUPAC,HH presence and age of children,2,With children 6 to 17 years only
@@ -323,7 +323,7 @@ MV,When moved into this house or apartment,2,13 to 23 months
 MV,When moved into this house or apartment,3,2 to 4 years
 MV,When moved into this house or apartment,4,5 to 9 years
 MV,When moved into this house or apartment,5,10 to 19 years
-MV,When moved into this house or apartment,6,20 to 29 years 
+MV,When moved into this house or apartment,6,20 to 29 years
 MV,When moved into this house or apartment,7,30 years or more
 NOC,Number of own children in household (unweighted),bb,N/A(GQ/vacant)
 NOC,Number of own children in household (unweighted),00,No own children
@@ -441,7 +441,7 @@ TAXP,Property taxes (yearly amount),53,$4100 - $4199
 TAXP,Property taxes (yearly amount),54,$4200 - $4299
 TAXP,Property taxes (yearly amount),55,$4300 - $4399
 TAXP,Property taxes (yearly amount),56,$4400 - $4499
-TAXP,Property taxes (yearly amount),57,$4500 - $4599 
+TAXP,Property taxes (yearly amount),57,$4500 - $4599
 TAXP,Property taxes (yearly amount),58,$4600 - $4699
 TAXP,Property taxes (yearly amount),59,$4700 - $4799
 TAXP,Property taxes (yearly amount),60,$4800 - $4899
@@ -459,7 +459,7 @@ WIF,Workers in family during the past 12 months,1,1 worker
 WIF,Workers in family during the past 12 months,2,2 workers
 WIF,Workers in family during the past 12 months,3,3 or more workers in family
 WKEXREL,Work experience of householder and spouse,bb,N/A (GQ/vacant/not a family)
-WKEXREL,Work experience of householder and spouse,01,Householder and spouse worked FT 
+WKEXREL,Work experience of householder and spouse,01,Householder and spouse worked FT
 WKEXREL,Work experience of householder and spouse,02,Householder worked FT; spouse worked < FT
 WKEXREL,Work experience of householder and spouse,03,Householder worked FT; spouse did not work
 WKEXREL,Work experience of householder and spouse,04,Householder worked < FT; spouse worked FT
@@ -598,16 +598,16 @@ FTOILP,Flush toilet allocation flag,0,No
 FTOILP,Flush toilet allocation flag,1,Yes
 FVACSP,Vacancy status allocation flag,b,N/A (GQ)
 FVACSP,Vacancy status allocation flag,0,No
-FVACSP,Vacancy status allocation flag,1,Yes 
+FVACSP,Vacancy status allocation flag,1,Yes
 FVALP,Property value allocation flag,b,N/A (GQ)
 FVALP,Property value allocation flag,0,No
-FVALP,Property value allocation flag,1,Yes 
+FVALP,Property value allocation flag,1,Yes
 FVEHP,Vehicles available allocation flag,b,N/A (GQ)
 FVEHP,Vehicles available allocation flag,0,No
 FVEHP,Vehicles available allocation flag,1,Yes
 FWATP,Water (yearly cost) allocation flag,b,N/A (GQ)
 FWATP,Water (yearly cost) allocation flag,0,No
-FWATP,Water (yearly cost) allocation flag,1,Yes 
+FWATP,Water (yearly cost) allocation flag,1,Yes
 FYBLP,When structure first built allocation flag,b,N/A (GQ)
 FYBLP,When structure first built allocation flag,0,No
 FYBLP,When structure first built allocation flag,1,Yes
@@ -694,7 +694,7 @@ RT,Record Type,P,Person Record
 SERIALNO,Housing unit/GQ person serial number,201100000001..201599999999,Unique identifier
 SPORDER,Person number,01..20,Person number
 PUMA00,Public use microdata area code (PUMA) based on Census 2000 definition for data collected prior to 2012. Use in combination with PUMA10.,00100..08200,Public use microdata area codes
-PUMA00,Public use microdata area code (PUMA) based on Census 2000 definition for data collected prior to 2012. Use in combination with PUMA10.,-0009,Code classification is Not Applicable for data collected in 2012 or later 
+PUMA00,Public use microdata area code (PUMA) based on Census 2000 definition for data collected prior to 2012. Use in combination with PUMA10.,-0009,Code classification is Not Applicable for data collected in 2012 or later
 PUMA10,Public use microdata area code (PUMA) based on 2010 Census definition for data collected in 2012 or later. Use in combination with PUMA00.,00100..70301,Public use microdata area codes
 PUMA10,Public use microdata area code (PUMA) based on 2010 Census definition for data collected in 2012 or later. Use in combination with PUMA00.,-0009,Code classification is Not Applicable for data collected prior to 2012
 ST,State Code,01,Alabama/AL
@@ -750,7 +750,7 @@ ST,State Code,55,Wisconsin/WI
 ST,State Code,56,Wyoming/WY
 ST,State Code,72,Puerto Rico/PR
 PWGTP,Person's weight	,00001..09999,Integer weight of person
-AGEP,Age,00,Under 1 year	
+AGEP,Age,00,Under 1 year
 AGEP,Age,01..99,1 to 99 years (Top-coded***)
 CIT,Citizenship status,1,Born in the U.S.
 CIT,Citizenship status,2,"Born in Puerto Rico, Guam, the U.S. Virgin Islands, or the "
@@ -832,7 +832,7 @@ CITWP05,Year of naturalization write-in for data collected prior to 2012,2008,20
 CITWP05,Year of naturalization write-in for data collected prior to 2012,2009,2009
 CITWP05,Year of naturalization write-in for data collected prior to 2012,2010,2010
 CITWP05,Year of naturalization write-in for data collected prior to 2012,2011,2011
-CITWP05,Year of naturalization write-in for data collected prior to 2012,-009,Code classification is Not Applicable because data collected in 2012 or later	
+CITWP05,Year of naturalization write-in for data collected prior to 2012,-009,Code classification is Not Applicable because data collected in 2012 or later
 CITWP12,Year of naturalization write-in for data collected in 2012 or later,bbbb,Not eligible - not naturalized
 CITWP12,Year of naturalization write-in for data collected in 2012 or later,1928,1928 or earlier (Bottom-coded)
 CITWP12,Year of naturalization write-in for data collected in 2012 or later,1929,1929 - 1933
@@ -933,14 +933,14 @@ DOUT,Independent living difficulty,2,No
 DPHY,Ambulatory difficulty,b,N/A (Less than 5 years old)
 DPHY,Ambulatory difficulty,1,Yes
 DPHY,Ambulatory difficulty,2,No
-DRAT,Veteran service connected disability rating (percentage),b,N/A (No service-connected disability/never served in military) 
+DRAT,Veteran service connected disability rating (percentage),b,N/A (No service-connected disability/never served in military)
 DRAT,Veteran service connected disability rating (percentage),1,0 percent
 DRAT,Veteran service connected disability rating (percentage),2,10 or 20 percent
 DRAT,Veteran service connected disability rating (percentage),3,30 or 40 percent
 DRAT,Veteran service connected disability rating (percentage),4,50 or 60 percent
 DRAT,Veteran service connected disability rating (percentage),5,"70, 80, 90, or 100 percent"
 DRAT,Veteran service connected disability rating (percentage),6,Not reported
-DRATX,Veteran service connected disability rating (checkbox),b,N/A (Less than 17 years old/never served in military) 
+DRATX,Veteran service connected disability rating (checkbox),b,N/A (Less than 17 years old/never served in military)
 DRATX,Veteran service connected disability rating (checkbox),1,Yes
 DRATX,Veteran service connected disability rating (checkbox),2,No
 DREM,Cognitive difficulty ,b,N/A (Less than 5 years old)
@@ -1037,7 +1037,7 @@ MARHYP05,Year last married for data collected prior to 2012,bbbb,N/A (age less t
 MARHYP05,Year last married for data collected prior to 2012,1928,1928 or earlier (Bottom-coded)
 MARHYP05,Year last married for data collected prior to 2012,1929,1929
 MARHYP05,Year last married for data collected prior to 2012,1930,1930
-MARHYP05,Year last married for data collected prior to 2012,1931,1931 
+MARHYP05,Year last married for data collected prior to 2012,1931,1931
 MARHYP05,Year last married for data collected prior to 2012,1932,1932
 MARHYP05,Year last married for data collected prior to 2012,1933,1933
 MARHYP05,Year last married for data collected prior to 2012,1934,1934
@@ -1118,7 +1118,7 @@ MARHYP05,Year last married for data collected prior to 2012,2008,2008
 MARHYP05,Year last married for data collected prior to 2012,2009,2009
 MARHYP05,Year last married for data collected prior to 2012,2010,2010
 MARHYP05,Year last married for data collected prior to 2012,2011,2011
-MARHYP05,Year last married for data collected prior to 2012,-009,Code classification is Not Applicable because data collected in 2012 or later	
+MARHYP05,Year last married for data collected prior to 2012,-009,Code classification is Not Applicable because data collected in 2012 or later
 MARHYP12,Year last married for data collected in 2012 or later,bbbb,N/A (age less than 15 years; never married)
 MARHYP12,Year last married for data collected in 2012 or later,1932,1932 or earlier (Bottom-coded)
 MARHYP12,Year last married for data collected in 2012 or later,1933,1933
@@ -1204,7 +1204,7 @@ MARHYP12,Year last married for data collected in 2012 or later,2012,2012
 MARHYP12,Year last married for data collected in 2012 or later,2013,2013
 MARHYP12,Year last married for data collected in 2012 or later,2014,2014
 MARHYP12,Year last married for data collected in 2012 or later,2015,2015
-MARHYP12,Year last married for data collected in 2012 or later,-009,Code classification is Not Applicable because data collected prior to 2012	
+MARHYP12,Year last married for data collected in 2012 or later,-009,Code classification is Not Applicable because data collected prior to 2012
 MIG,Mobility status (lived here 1 year ago),b,N/A (less than 1 year old)
 MIG,Mobility status (lived here 1 year ago),1,"Yes, same house (nonmovers)"
 MIG,Mobility status (lived here 1 year ago),2,"No, outside US and Puerto Rico"
@@ -1212,7 +1212,7 @@ MIG,Mobility status (lived here 1 year ago),3,"No, different house in US or Puer
 MIL,Military service,b,N/A (less than 17 years old)
 MIL,Military service,1,Now on active duty
 MIL,Military service,2,"On active duty in the past, but not now"
-MIL,Military service,3,Only on active duty for training in Reserves/National Guard 
+MIL,Military service,3,Only on active duty for training in Reserves/National Guard
 MIL,Military service,4,Never served in the military
 MLPA,Served September 2001 or later,b,N/A (Less than 17 years old/no active duty)
 MLPA,Served September 2001 or later,0,Did not serve this period
@@ -1460,7 +1460,7 @@ YOEP05,Year of entry for data collected prior to 2012,2008,2008
 YOEP05,Year of entry for data collected prior to 2012,2009,2009
 YOEP05,Year of entry for data collected prior to 2012,2010,2010
 YOEP05,Year of entry for data collected prior to 2012,2011,2011
-YOEP05,Year of entry for data collected prior to 2012,-009,Code classification is Not Applicable because data collected in 2012 or later	
+YOEP05,Year of entry for data collected prior to 2012,-009,Code classification is Not Applicable because data collected in 2012 or later
 YOEP12,Year of entry for data collected in 2012 or later,bbbb,Not eligible - Born in the US
 YOEP12,Year of entry for data collected in 2012 or later,1921,1921 or earlier (Bottom-coded)
 YOEP12,Year of entry for data collected in 2012 or later,1922,1922 - 1923
@@ -1547,7 +1547,7 @@ YOEP12,Year of entry for data collected in 2012 or later,2012,2012
 YOEP12,Year of entry for data collected in 2012 or later,2013,2013
 YOEP12,Year of entry for data collected in 2012 or later,2014,2014
 YOEP12,Year of entry for data collected in 2012 or later,2015,2015
-YOEP12,Year of entry for data collected in 2012 or later,-009,Code classification is Not Applicable because data collected prior to 2012	
+YOEP12,Year of entry for data collected in 2012 or later,-009,Code classification is Not Applicable because data collected prior to 2012
 ANC,Ancestry recode,1,Single
 ANC,Ancestry recode,2,Multiple
 ANC,Ancestry recode,3,Unclassified
@@ -1771,7 +1771,7 @@ ANC1P05,Recoded Detailed Ancestry for data collected prior to 2012 - first entry
 ANC1P05,Recoded Detailed Ancestry for data collected prior to 2012 - first entry,997,Other groups
 ANC1P05,Recoded Detailed Ancestry for data collected prior to 2012 - first entry,998,Other responses
 ANC1P05,Recoded Detailed Ancestry for data collected prior to 2012 - first entry,999,Not reported
-ANC1P05,Recoded Detailed Ancestry for data collected prior to 2012 - first entry,-09,Code classification is Not Applicable because data collected in 2012 or later	
+ANC1P05,Recoded Detailed Ancestry for data collected prior to 2012 - first entry,-09,Code classification is Not Applicable because data collected in 2012 or later
 ANC1P12,Recoded Detailed Ancestry for data collected in 2012 or later - first entry,001,Alsatian
 ANC1P12,Recoded Detailed Ancestry for data collected in 2012 or later - first entry,003,Austrian
 ANC1P12,Recoded Detailed Ancestry for data collected in 2012 or later - first entry,005,Basque
@@ -2222,7 +2222,7 @@ ANC2P05,Recoded Detailed Ancestry for data collected prior to 2012 - second entr
 ANC2P05,Recoded Detailed Ancestry for data collected prior to 2012 - second entry,997,Other groups
 ANC2P05,Recoded Detailed Ancestry for data collected prior to 2012 - second entry,998,Other responses
 ANC2P05,Recoded Detailed Ancestry for data collected prior to 2012 - second entry,999,Not reported
-ANC2P05,Recoded Detailed Ancestry for data collected prior to 2012 - second entry,-09,Code classification is Not Applicable because data collected in 2012 or later	
+ANC2P05,Recoded Detailed Ancestry for data collected prior to 2012 - second entry,-09,Code classification is Not Applicable because data collected in 2012 or later
 ANC2P12,Recoded Detailed Ancestry for data collected in 2012 or later - second entry,001,Alsatian
 ANC2P12,Recoded Detailed Ancestry for data collected in 2012 or later - second entry,003,Austrian
 ANC2P12,Recoded Detailed Ancestry for data collected in 2012 or later - second entry,005,Basque
@@ -2445,7 +2445,7 @@ ANC2P12,Recoded Detailed Ancestry for data collected in 2012 or later - second e
 ANC2P12,Recoded Detailed Ancestry for data collected in 2012 or later - second entry,931,Canadian
 ANC2P12,Recoded Detailed Ancestry for data collected in 2012 or later - second entry,935,French Canadian
 ANC2P12,Recoded Detailed Ancestry for data collected in 2012 or later - second entry,937,Cajun
-ANC2P12,Recoded Detailed Ancestry for data collected in 2012 or later - second entry,939,American 
+ANC2P12,Recoded Detailed Ancestry for data collected in 2012 or later - second entry,939,American
 ANC2P12,Recoded Detailed Ancestry for data collected in 2012 or later - second entry,940,United States
 ANC2P12,Recoded Detailed Ancestry for data collected in 2012 or later - second entry,994,North American
 ANC2P12,Recoded Detailed Ancestry for data collected in 2012 or later - second entry,995,Mixture
@@ -2472,7 +2472,7 @@ DRIVESP,Number of vehicles calculated from JWRI,4,0.250 vehicles (In a 4-person 
 DRIVESP,Number of vehicles calculated from JWRI,5,0.200 vehicles (In a 5- or 6-person carpool)
 DRIVESP,Number of vehicles calculated from JWRI,6,0.143 vehicles (In a 7-or-more person carpool)
 ESP,Employment status of parents,b,"N/A (not own child of householder, and not child in subfamily)"
-ESP,Employment status of parents,1,Living with two parents: both parents in labor force 
+ESP,Employment status of parents,1,Living with two parents: both parents in labor force
 ESP,Employment status of parents,2,Living with two parents: Father only in labor force
 ESP,Employment status of parents,3,Living with two parents: Mother only in labor force
 ESP,Employment status of parents,4,Living with two parents: Neither parent in labor force
@@ -2917,7 +2917,7 @@ INDP,Industry recode based on 2012 IND codes,2370,MFG-Plastics Products
 INDP,Industry recode based on 2012 IND codes,2380,MFG-Tires
 INDP,Industry recode based on 2012 IND codes,2390,"MFG-Rubber Products, Except Tires"
 INDP,Industry recode based on 2012 IND codes,2470,"MFG-Pottery, Ceramics, And Plumbing Fixture Manufacturing"
-INDP,Industry recode based on 2012 IND codes,2480,MFG- Clay Building Material And Refractories 
+INDP,Industry recode based on 2012 IND codes,2480,MFG- Clay Building Material And Refractories
 INDP,Industry recode based on 2012 IND codes,2490,MFG-Glass And Glass Products
 INDP,Industry recode based on 2012 IND codes,2570,"MFG-Cement, Concrete, Lime, And Gypsum Products"
 INDP,Industry recode based on 2012 IND codes,2590,MFG-Miscellaneous Nonmetallic Mineral Products
@@ -3051,7 +3051,7 @@ INDP,Industry recode based on 2012 IND codes,7080,FIN-Automotive Equipment Renta
 INDP,Industry recode based on 2012 IND codes,7170,FIN-Video Tape And Disk Rental
 INDP,Industry recode based on 2012 IND codes,7180,FIN-Other Consumer Goods Rental
 INDP,Industry recode based on 2012 IND codes,7190,"FIN-Commercial, Industrial, And Other Intangible Assets Rental and Leasing"
-INDP,Industry recode based on 2012 IND codes,7270,PRF-Legal Services		
+INDP,Industry recode based on 2012 IND codes,7270,PRF-Legal Services
 INDP,Industry recode based on 2012 IND codes,7280,"PRF-Accounting, Tax Preparation, Bookkeeping And Payroll Services"
 INDP,Industry recode based on 2012 IND codes,7290,"PRF-Architectural, Engineering, And Related Services"
 INDP,Industry recode based on 2012 IND codes,7370,PRF-Specialized Design Services
@@ -3102,7 +3102,7 @@ INDP,Industry recode based on 2012 IND codes,8780,SRV-Car Washes
 INDP,Industry recode based on 2012 IND codes,8790,SRV-Electronic And Precision Equipment Repair And Maintenance
 INDP,Industry recode based on 2012 IND codes,8870,SRV-Commercial And Industrial Machinery And Equipment Repair and Maintenance
 INDP,Industry recode based on 2012 IND codes,8880,SRV-Personal And Household Goods Repair And Maintenance
-INDP,Industry recode based on 2012 IND codes,8970,SRV-Barber Shops		
+INDP,Industry recode based on 2012 IND codes,8970,SRV-Barber Shops
 INDP,Industry recode based on 2012 IND codes,8980,SRV-Beauty Salons
 INDP,Industry recode based on 2012 IND codes,8990,SRV-Nail Salons And Other Personal Care Services
 INDP,Industry recode based on 2012 IND codes,9070,SRV-Drycleaning And Laundry Services
@@ -3566,7 +3566,7 @@ JWDP,Time of departure for work - hour and minute,147,10:40 p.m. to 10:49 p.m.
 JWDP,Time of departure for work - hour and minute,148,10:50 p.m. to 10:59 p.m.
 JWDP,Time of departure for work - hour and minute,149,11:00 p.m. to 11:29 p.m.
 JWDP,Time of departure for work - hour and minute,150,11:30 p.m. to 11:59 p.m.
-LANP05,Language spoken at home for data collected prior to 2012,bbb,N/A (less than 5 years old/speaks only English) 
+LANP05,Language spoken at home for data collected prior to 2012,bbb,N/A (less than 5 years old/speaks only English)
 LANP05,Language spoken at home for data collected prior to 2012,601,Jamaican Creole
 LANP05,Language spoken at home for data collected prior to 2012,607,German
 LANP05,Language spoken at home for data collected prior to 2012,608,Pennsylvania Dutch
@@ -3671,8 +3671,8 @@ LANP05,Language spoken at home for data collected prior to 2012,992,South/Centra
 LANP05,Language spoken at home for data collected prior to 2012,993,Other Specified North American Indian languages
 LANP05,Language spoken at home for data collected prior to 2012,994,Other languages
 LANP05,Language spoken at home for data collected prior to 2012,996,Uncodable
-LANP05,Language spoken at home for data collected prior to 2012,-09,Code classification is Not Applicable because data collected in 2012 or later	
-LANP12,Language spoken at home for data collected in 2012 or later,bbb,N/A (less than 5 years old/speaks only English) 
+LANP05,Language spoken at home for data collected prior to 2012,-09,Code classification is Not Applicable because data collected in 2012 or later
+LANP12,Language spoken at home for data collected in 2012 or later,bbb,N/A (less than 5 years old/speaks only English)
 LANP12,Language spoken at home for data collected in 2012 or later,601,Jamaican Creole
 LANP12,Language spoken at home for data collected in 2012 or later,602,Krio
 LANP12,Language spoken at home for data collected in 2012 or later,607,German
@@ -3788,12 +3788,12 @@ MIGPUMA00,Migration PUMA based on Census 2000 definition for data collected prio
 MIGPUMA00,Migration PUMA based on Census 2000 definition for data collected prior to,00001,Did not live in the United States or in Puerto Rico one year ago
 MIGPUMA00,Migration PUMA based on Census 2000 definition for data collected prior to,00002,Lived in Puerto Rico one year ago and current residence is in the U.S.
 MIGPUMA00,Migration PUMA based on Census 2000 definition for data collected prior to,00100..08200,Assigned Migration PUMA. Use with MIGSP05.
-MIGPUMA00,Migration PUMA based on Census 2000 definition for data collected prior to,-0009,Code classification is Not Applicable because data collected in 2012 or later	
-MIGPUMA10,Migration PUMA based on 2010 Census definition for data collected in 2012 ,bbbbb,N/A (person less than 1 year old/lived in same house 1 year ago) 
+MIGPUMA00,Migration PUMA based on Census 2000 definition for data collected prior to,-0009,Code classification is Not Applicable because data collected in 2012 or later
+MIGPUMA10,Migration PUMA based on 2010 Census definition for data collected in 2012 ,bbbbb,N/A (person less than 1 year old/lived in same house 1 year ago)
 MIGPUMA10,Migration PUMA based on 2010 Census definition for data collected in 2012 ,00001,Did not live in the United States or in Puerto Rico one year ago
 MIGPUMA10,Migration PUMA based on 2010 Census definition for data collected in 2012 ,00002,Lived in Puerto Rico one year ago and current residence is in the U.S.
 MIGPUMA10,Migration PUMA based on 2010 Census definition for data collected in 2012 ,00100..70100,Assigned Migration PUMA. Use with MIGSP12.
-MIGPUMA10,Migration PUMA based on 2010 Census definition for data collected in 2012 ,-0009,Code classification is Not Applicable because data collected prior to 2012 
+MIGPUMA10,Migration PUMA based on 2010 Census definition for data collected in 2012 ,-0009,Code classification is Not Applicable because data collected prior to 2012
 MIGSP05,Migration recode for data collected prior to 2012 - State or foreign country,bbb,N/A (person less than 1 year old/lived in same house 1 year ago)
 MIGSP05,Migration recode for data collected prior to 2012 - State or foreign country,001,Alabama/AL
 MIGSP05,Migration recode for data collected prior to 2012 - State or foreign country,002,Alaska/AK
@@ -3894,7 +3894,7 @@ MIGSP05,Migration recode for data collected prior to 2012 - State or foreign cou
 MIGSP05,Migration recode for data collected prior to 2012 - State or foreign country,468,"Other Africa, Not Specified"
 MIGSP05,Migration recode for data collected prior to 2012 - State or foreign country,501,Australia
 MIGSP05,Migration recode for data collected prior to 2012 - State or foreign country,554,"Australian and New Zealand Subregions, Not Specified, Oceania and at Sea"
-MIGSP05,Migration recode for data collected prior to 2012 - State or foreign country,-09,Code classification is Not Applicable because data collected in 2012 or later	
+MIGSP05,Migration recode for data collected prior to 2012 - State or foreign country,-09,Code classification is Not Applicable because data collected in 2012 or later
 MIGSP12,Migration recode for data collected in 2012 or later - State or foreign country code,bbb,N/A (person less than 1 year old/lived in same house 1 year ago)
 MIGSP12,Migration recode for data collected in 2012 or later - State or foreign country code,001,Alabama/AL
 MIGSP12,Migration recode for data collected in 2012 or later - State or foreign country code,002,Alaska/AK
@@ -3996,7 +3996,7 @@ MIGSP12,Migration recode for data collected in 2012 or later - State or foreign 
 MIGSP12,Migration recode for data collected in 2012 or later - State or foreign country code,468,"Northern Africa or Other Africa, Not Specified"
 MIGSP12,Migration recode for data collected in 2012 or later - State or foreign country code,501,Australia
 MIGSP12,Migration recode for data collected in 2012 or later - State or foreign country code,555,"Other US Island Areas, Oceania, Not Specified, or At Sea"
-MIGSP12,Migration recode for data collected in 2012 or later - State or foreign country code,-09,Code classification is Not Applicable because data collected prior to 2012 
+MIGSP12,Migration recode for data collected in 2012 or later - State or foreign country code,-09,Code classification is Not Applicable because data collected prior to 2012
 MSP,"Married, spouse present/spouse absent",b,N/A (age less than 15 years)
 MSP,"Married, spouse present/spouse absent",1,"Now married, spouse present"
 MSP,"Married, spouse present/spouse absent",2,"Now married, spouse absent"
@@ -4004,7 +4004,7 @@ MSP,"Married, spouse present/spouse absent",3,Widowed
 MSP,"Married, spouse present/spouse absent",4,Divorced
 MSP,"Married, spouse present/spouse absent",5,Separated
 MSP,"Married, spouse present/spouse absent",6,Never married
-NAICSP,NAICS Industry code based on 2012 NAICS codes ,bbbbbbbb,Not in universe (less than 16 years old/NILF who last worked more than 5 years ago or never worked)		
+NAICSP,NAICS Industry code based on 2012 NAICS codes ,bbbbbbbb,Not in universe (less than 16 years old/NILF who last worked more than 5 years ago or never worked)
 NAICSP,NAICS Industry code based on 2012 NAICS codes ,111,AGR-Crop Production
 NAICSP,NAICS Industry code based on 2012 NAICS codes ,112,AGR-Animal Production And Aquaculture
 NAICSP,NAICS Industry code based on 2012 NAICS codes ,1133,AGR-Logging
@@ -4064,7 +4064,7 @@ NAICSP,NAICS Industry code based on 2012 NAICS codes ,3261,MFG-Plastics Products
 NAICSP,NAICS Industry code based on 2012 NAICS codes ,32621,MFG-Tires
 NAICSP,NAICS Industry code based on 2012 NAICS codes ,3262M,"MFG-Rubber Products, Except Tires"
 NAICSP,NAICS Industry code based on 2012 NAICS codes ,32711,"MFG-Pottery, Ceramics, And Plumbing Fixture Manufacturing"
-NAICSP,NAICS Industry code based on 2012 NAICS codes ,327120,MFG- Clay Building Material And Refractories 
+NAICSP,NAICS Industry code based on 2012 NAICS codes ,327120,MFG- Clay Building Material And Refractories
 NAICSP,NAICS Industry code based on 2012 NAICS codes ,3272,MFG-Glass And Glass Products
 NAICSP,NAICS Industry code based on 2012 NAICS codes ,3279,MFG-Miscellaneous Nonmetallic Mineral Products
 NAICSP,NAICS Industry code based on 2012 NAICS codes ,327M,"MFG-Cement, Concrete, Lime, And Gypsum Products"
@@ -4772,13 +4772,13 @@ PAOC,Presence and age of own children,2,Females with own children 6 to 17 years 
 PAOC,Presence and age of own children,3,Females with own children under 6 years and 6 to 17 years
 PAOC,Presence and age of own children,4,Females with no own children
 PERNP,Total person's earnings,bbbbbbb,N/A (less than 15 years old)
-PERNP,Total person's earnings,0000000,No earnings Loss of $10000 or more(Rounded & bottom-coded 
+PERNP,Total person's earnings,0000000,No earnings Loss of $10000 or more(Rounded & bottom-coded
 PERNP,Total person's earnings,-009999..-000001,Loss $1 to $9999 (Rounded components)
 PERNP,Total person's earnings,0000001,$1 or break even
 PERNP,Total person's earnings,0000002..9999999,$2 to $9999999(Rounded & top-coded components)
 PINCP,Total person's income (signed),bbbbbbb,N/A (less than 15 years old)
 PINCP,Total person's income (signed),0000000,None
-PINCP,Total person's income (signed),-019999,Loss of $19999 or more (Rounded & bottom-coded components) 
+PINCP,Total person's income (signed),-019999,Loss of $19999 or more (Rounded & bottom-coded components)
 PINCP,Total person's income (signed),-019998..-000001,Loss $1 to $19998 (Rounded components)
 PINCP,Total person's income (signed),0000001,$1 or break even
 PINCP,Total person's income (signed),0000002..9999999,$2 to $9999999(Rounded & top-coded components)
@@ -4989,7 +4989,7 @@ POBP05,Place of birth (Recode) for data collected prior to 2012,515,New Zealand
 POBP05,Place of birth (Recode) for data collected prior to 2012,523,Tonga
 POBP05,Place of birth (Recode) for data collected prior to 2012,527,Samoa
 POBP05,Place of birth (Recode) for data collected prior to 2012,554,"Other US Island Areas, Oceania, Not Specified, or at Sea"
-POBP05,Place of birth (Recode) for data collected prior to 2012,-09,Code classification is Not Applicable because data collected in 2012 or later 
+POBP05,Place of birth (Recode) for data collected prior to 2012,-09,Code classification is Not Applicable because data collected in 2012 or later
 POBP12,Place of birth (Recode) for data collected in 2012 or later,001,Alabama/AL
 POBP12,Place of birth (Recode) for data collected in 2012 or later,002,Alaska/AK
 POBP12,Place of birth (Recode) for data collected in 2012 or later,004,Arizona/AZ
@@ -5212,11 +5212,11 @@ POVPIP,Income-to-poverty ratio recode,501,501 percent or more
 POWPUMA00,Place of work PUMA based on Census 2000 definition for data collected prior ,bbbbb,"N/A (not a worker--not in the labor force, including persons under 16 years; unemployed; civilian employed, with a job not at work; Armed Forces, with a job but not at work)"
 POWPUMA00,Place of work PUMA based on Census 2000 definition for data collected prior ,00100..08200,Assigned Place of work PUMA. Use with POWSP05.
 POWPUMA00,Place of work PUMA based on Census 2000 definition for data collected prior ,22777,"Combination of 01801, 01802, and 01905 in Louisiana "
-POWPUMA00,Place of work PUMA based on Census 2000 definition for data collected prior ,-0009,Code classification is Not Applicable because data collected in 2012 or later 
+POWPUMA00,Place of work PUMA based on Census 2000 definition for data collected prior ,-0009,Code classification is Not Applicable because data collected in 2012 or later
 POWPUMA10,Place of work PUMA based on 2010 Census definition for data collected in ,bbbbb,"N/A (not a worker--not in the labor force, including persons under 16 years; unemployed; civilian employed, with a job not at work; Armed Forces, with a job but not at work)"
 POWPUMA10,Place of work PUMA based on 2010 Census definition for data collected in ,00001,Did not work in the United States or in Puerto Rico
 POWPUMA10,Place of work PUMA based on 2010 Census definition for data collected in ,00100..70100,Assigned Place of work PUMA. Use with POWSP12.
-POWPUMA10,Place of work PUMA based on 2010 Census definition for data collected in ,-0009,Code classification is Not Applicable because data collected prior to 2012 
+POWPUMA10,Place of work PUMA based on 2010 Census definition for data collected in ,-0009,Code classification is Not Applicable because data collected prior to 2012
 POWSP05,Place of work for data collected prior to 2012 - State or foreign country ,bbb,"N/A (not a workernot in the labor force, including persons under 16 years; unemployed; employed, with a job not at work; Armed Forces, with a job but not at work)"
 POWSP05,Place of work for data collected prior to 2012 - State or foreign country ,001,Alabama/AL
 POWSP05,Place of work for data collected prior to 2012 - State or foreign country ,002,Alaska/AK
@@ -5277,7 +5277,7 @@ POWSP05,Place of work for data collected prior to 2012 - State or foreign countr
 POWSP05,Place of work for data collected prior to 2012 - State or foreign country ,303,Mexico
 POWSP05,Place of work for data collected prior to 2012 - State or foreign country ,399,"Americas, Not Specified"
 POWSP05,Place of work for data collected prior to 2012 - State or foreign country ,555,"Other US Island Areas Not Specified, Africa, Oceania, at Sea, or Abroad, Not Specified"
-POWSP05,Place of work for data collected prior to 2012 - State or foreign country ,-09,Code classification is Not Applicable because data collected in 2012 or later 
+POWSP05,Place of work for data collected prior to 2012 - State or foreign country ,-09,Code classification is Not Applicable because data collected in 2012 or later
 POWSP12,Place of work for data collected in 2012 or later - State or foreign country,bbb,"N/A (not a worker--not in the labor force, including persons under 16 years; unemployed; employed, with a job not at work; Armed Forces, with a job but not at work)"
 POWSP12,Place of work for data collected in 2012 or later - State or foreign country,001,Alabama/AL
 POWSP12,Place of work for data collected in 2012 or later - State or foreign country,002,Alaska/AK
@@ -5427,7 +5427,7 @@ RAC2P05,Recoded detailed race code for data collected prior to 2012,-9,Code clas
 RAC2P12,Recoded detailed race code for data collected in 2012 or later,01,White alone
 RAC2P12,Recoded detailed race code for data collected in 2012 or later,02,Black or African American alone
 RAC2P12,Recoded detailed race code for data collected in 2012 or later,03,Apache alone
-RAC2P12,Recoded detailed race code for data collected in 2012 or later,04,Blackfeet alone 
+RAC2P12,Recoded detailed race code for data collected in 2012 or later,04,Blackfeet alone
 RAC2P12,Recoded detailed race code for data collected in 2012 or later,05,Cherokee alone
 RAC2P12,Recoded detailed race code for data collected in 2012 or later,06,Cheyenne alone
 RAC2P12,Recoded detailed race code for data collected in 2012 or later,07,Chickasaw alone
@@ -5447,7 +5447,7 @@ RAC2P12,Recoded detailed race code for data collected in 2012 or later,20,Pueblo
 RAC2P12,Recoded detailed race code for data collected in 2012 or later,21,Puget Sound Salish alone
 RAC2P12,Recoded detailed race code for data collected in 2012 or later,22,Seminole alone
 RAC2P12,Recoded detailed race code for data collected in 2012 or later,23,Sioux alone
-RAC2P12,Recoded detailed race code for data collected in 2012 or later,24,South American Indian alone 
+RAC2P12,Recoded detailed race code for data collected in 2012 or later,24,South American Indian alone
 RAC2P12,Recoded detailed race code for data collected in 2012 or later,25,Tohono O'Odham alone
 RAC2P12,Recoded detailed race code for data collected in 2012 or later,26,Yaqui alone
 RAC2P12,Recoded detailed race code for data collected in 2012 or later,27,Other specified American Indian tribes alone
@@ -5489,7 +5489,7 @@ RAC2P12,Recoded detailed race code for data collected in 2012 or later,62,Tongan
 RAC2P12,Recoded detailed race code for data collected in 2012 or later,63,Guamanian or Chamorro alone
 RAC2P12,Recoded detailed race code for data collected in 2012 or later,64,Marshallese alone
 RAC2P12,Recoded detailed race code for data collected in 2012 or later,65,Fijian alone
-RAC2P12,Recoded detailed race code for data collected in 2012 or later,66,Other Native Hawaiian and Other Pacific Islander 
+RAC2P12,Recoded detailed race code for data collected in 2012 or later,66,Other Native Hawaiian and Other Pacific Islander
 RAC2P12,Recoded detailed race code for data collected in 2012 or later,67,Some Other Race alone
 RAC2P12,Recoded detailed race code for data collected in 2012 or later,68,Two or More Races
 RAC2P12,Recoded detailed race code for data collected in 2012 or later,-9,Code classification is Not Applicable because data collected prior to 2012
@@ -5681,7 +5681,7 @@ RACSOR,Some other race recode (Some other race alone or in,1,Yes
 RACWHT,White recode (White alone or in combination with one or more,0,No
 RACWHT,White recode (White alone or in combination with one or more,1,Yes
 RC,Related child,0,No (includes GQ)
-RC,Related child,1,Yes 
+RC,Related child,1,Yes
 SCIENGP,Field of degree science and engineering flag - NSF definition,b,N/A (less than a bachelors degree)
 SCIENGP,Field of degree science and engineering flag - NSF definition,1,Yes
 SCIENGP,Field of degree science and engineering flag - NSF definition,2,No
@@ -6677,26 +6677,26 @@ SOCP12,SOC Occupation recode for data collected in 2012 or later based on 2010 S
 SOCP12,SOC Occupation recode for data collected in 2012 or later based on 2010 SOC	codes	,N.A.//,Code Classification Is Not Applicable Because Data Collected Prior To 2012
 VPS,Veteran period of service,bb,"N/A (less than 17 years old, no active duty) War Times:"
 VPS,Veteran period of service,01,Gulf War: 9/2001 or later
-VPS,Veteran period of service,02,Gulf War: 9/2001 or later and Gulf War: 8/1990 - 8/2001 
-VPS,Veteran period of service,03,Gulf War: 9/2001 or later and Gulf War: 8/1990 - 8/2001 and Vietnam Era 
+VPS,Veteran period of service,02,Gulf War: 9/2001 or later and Gulf War: 8/1990 - 8/2001
+VPS,Veteran period of service,03,Gulf War: 9/2001 or later and Gulf War: 8/1990 - 8/2001 and Vietnam Era
 VPS,Veteran period of service,04,Gulf War: 8/1990 - 8/2001
 VPS,Veteran period of service,05,Gulf War: 8/1990 - 8/2001 and Vietnam Era
 VPS,Veteran period of service,06,Vietnam Era
-VPS,Veteran period of service,07,Vietnam Era and Korean War 
+VPS,Veteran period of service,07,Vietnam Era and Korean War
 VPS,Veteran period of service,08,"Vietnam Era, Korean War, and WWII "
 VPS,Veteran period of service,09,Korean War
-VPS,Veteran period of service,10,Korean War and WWII 
+VPS,Veteran period of service,10,Korean War and WWII
 VPS,Veteran period of service,11,WWII
 VPS,Veteran period of service,12,Between Gulf War and Vietnam Era only
-VPS,Veteran period of service,13,Between Vietnam Era and Korean War only 
-VPS,Veteran period of service,14,Between Korean War and World War II only 
-VPS,Veteran period of service,15,Pre-WWII only 
+VPS,Veteran period of service,13,Between Vietnam Era and Korean War only
+VPS,Veteran period of service,14,Between Korean War and World War II only
+VPS,Veteran period of service,15,Pre-WWII only
 WAOB,World area of birth ****,1,US state (POB = 001-059)
 WAOB,World area of birth ****,2,PR and US Island Areas (POB = 060-099)
 WAOB,World area of birth ****,3,"Latin America (POB = 303,310-399)"
 WAOB,World area of birth ****,4,"Asia (POB = 158-159,161,200-299)"
 WAOB,World area of birth ****,5,"Europe (POB = 100-157,160,162-199)"
-WAOB,World area of birth ****,6,Africa (POB = 400-499)		
+WAOB,World area of birth ****,6,Africa (POB = 400-499)
 WAOB,World area of birth ****,7,"Northern America (POB = 300-302,304-309)"
 WAOB,World area of birth ****,8,Oceania and at Sea (POB = 500-554)
 FAGEP,Age allocation flag,0,No
@@ -6731,7 +6731,7 @@ FESRP,Employment status recode allocation flag,0,No
 FESRP,Employment status recode allocation flag,1,Yes
 FFERP,Gave birth to child within the past 12 months allocation flag,0,No
 FFERP,Gave birth to child within the past 12 months allocation flag,1,Yes
-FFODP,Field of Degree allocation flag ,0,No 
+FFODP,Field of Degree allocation flag ,0,No
 FFODP,Field of Degree allocation flag ,1,Yes
 FGCLP,Grandparents living with grandchildren allocation flag,0,No
 FGCLP,Grandparents living with grandchildren allocation flag,1,Yes
@@ -6830,7 +6830,7 @@ FSSIP,Supplementary Security Income allocation flag,1,Yes
 FSSP,Social Security income allocation flag,0,No
 FSSP,Social Security income allocation flag,1,Yes
 FWAGP,Wages and salary income allocation flag,0,No
-FWAGP,Wages and salary income allocation flag,1,Yes 
+FWAGP,Wages and salary income allocation flag,1,Yes
 FWKHP,Usual hours worked per week past 12 months allocation flag,0,No
 FWKHP,Usual hours worked per week past 12 months allocation flag,1,Yes
 FWKLP,Last worked allocation flag,0,No

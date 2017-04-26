@@ -10,8 +10,8 @@ def output_to_csv(all_records):
     filename = "code_dictionary.csv"
     fieldnames = ['title', 'title_note', 'id', 'variable_name']
 
-    with open(filename, 'w') as csvfile:
-        myCsvWriter = csv.DictWriter(csvfile, delimiter=',', quotechar='"', fieldnames = fieldnames)
+    with open(filename, 'w', newline='\n') as csvfile:
+        myCsvWriter = csv.DictWriter(csvfile, delimiter=',', quotechar='"', fieldnames = fieldnames,lineterminator='\n')
 
         myCsvWriter.writeheader()
 
